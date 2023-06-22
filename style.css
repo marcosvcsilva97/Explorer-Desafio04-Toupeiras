@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 1440px;
+  height: 1024px;
+  background-image: url(./assets/fundo.svg);
+}
+
+.buracos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin: 300px auto 0;
+}
+
+.buraco {
+  width: 221px;
+  height: 168px;
+  background-image: url(./assets/toupeira6.svg);
+}
+
+.animated1 {
+  animation: toupeiras 0.5s 3s backwards;
+}
+
+.animated2 {
+  animation: toupeiras 0.5s 7s backwards;
+}
+
+.animated3 {
+  animation: toupeiras 0.5s 5s backwards;
+}
+
+@keyframes toupeiras {
+  0% {
+    background-image: url(./assets/toupeira1.svg);
+  }
+  20% {
+    background-image: url(./assets/toupeira2.svg);
+  }
+  40% {
+    background-image: url(./assets/toupeira3.svg);
+  }
+  60% {
+    background-image: url(./assets/toupeira4.svg);
+  }
+  80% {
+    background-image: url(./assets/toupeira5.svg);
+  }
+  100% {
+    background-image: url(./assets/toupeira6.svg);
+  }
+}
